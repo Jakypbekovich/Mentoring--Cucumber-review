@@ -79,7 +79,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- this line tell maven surefire plugin which file should be executed -->
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>${runner}</suiteXmlFile>
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
