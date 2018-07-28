@@ -27,7 +27,7 @@ public class Hooks {
 	
 	@After
 	public void tearDown(Scenario scenario) throws IOException {
-		if(scenario.isFailed()) {
+		if(scenario.isFailed()){
 		final byte[] screenshot = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.BYTES);		
 		scenario.embed(screenshot, "image/png");		
 		}

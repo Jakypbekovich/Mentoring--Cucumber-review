@@ -49,6 +49,7 @@ public class FirstStepTest {
 	   dashboardPage.bookings.click();
 	   dashboardPage.all_button.click();
 	}
+	
 
 	@Then("I get count of cutomers")
 	public void i_get_count_of_cutomers() {
@@ -56,5 +57,28 @@ public class FirstStepTest {
 		System.out.println(dashboardPage.count.size());
 	   assertTrue(dashboardPage.count.size()==52);
 	}
+//	@Then("I go into {string} Tab")
+//	public void i_go_into_Tab(String string) {
+//		switch(string) {
+//		case "Bookings":
+//			dashboardPage.bookings.click();
+//			break;
+//		case "Backup Database":
+//			dashboardPage.backup_database.click();
+//			break;
+//		case "Send Newsletter":
+//			dashboardPage.send_newsletter.click();
+//			break;
+//		case "Blog":
+//			dashboardPage.blog.click();
+//			break;
+//		case "CMS Pages":
+//			dashboardPage.cms_pages.click();
+//			break;
+//		default:
+//			
+//		}
+//		
+//	}
 
 }
